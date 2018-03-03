@@ -76,7 +76,7 @@ class TicTacToe
   def full?
     @board.all? do |full|
       if full == "X" || full == "O"
-        true 
+        true
       end
     end
   end
@@ -85,7 +85,7 @@ class TicTacToe
     @board.all? do |draw|
       if !(won?) && full? == true
         return draw
-      end 
+      end
     end
   end
 end
