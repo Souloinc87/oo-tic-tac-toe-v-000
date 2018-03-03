@@ -89,5 +89,11 @@ class TicTacToe
     end
   end
 
-  
+  def over?
+    @board.all? do |over|
+      if full? || draw? || won?
+        over
+      end
+    end
+  end 
 end
