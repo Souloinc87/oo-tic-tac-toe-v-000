@@ -67,6 +67,7 @@ class TicTacToe
       if position1 == "O" && position2 == "O" && position3 == "O"
         return win_combo
       elsif position1 == "X" && position2 == "X" && position3 == "X"
+        return win_combo
       end
     end
     false
