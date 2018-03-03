@@ -80,4 +80,12 @@ class TicTacToe
       end
     end
   end
+
+  def draw?
+    @board.all? do |draw|
+      if !(won?) && full? == true
+        return draw
+      end 
+    end
+  end
 end
